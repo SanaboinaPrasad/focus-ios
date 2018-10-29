@@ -41,6 +41,7 @@ class OverlayView: UIView {
         
         searchSuggestionsPrompt.backgroundColor = UIConstants.colors.background
         searchSuggestionsPrompt.clipsToBounds = true
+        searchSuggestionsPrompt.accessibilityIdentifier = "SearchSuggestionsPromptView"
         addSubview(searchSuggestionsPrompt)
         
         searchSuggestionsPrompt.snp.makeConstraints { make in
